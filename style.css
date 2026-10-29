@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(180deg, #102a43 0%, #011222 100%);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#timer-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #243b53;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#timer-fill {
+    width: 100%;
+    height: 100%;
+    background-color: #00ecff;
+    transition: width 0.1s linear;
+}
+
+#prompt-container {
+    background: #0b1d33;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #1982c4;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #00ecff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #011222;
+}
+
+button:hover {
+    background-color: #00b8d4;
+}
+
+.hidden { display: none !important; }
+
+#feedback {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}

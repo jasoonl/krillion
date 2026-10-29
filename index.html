@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Krillion Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>DEEP DIVE</h1>
+            <div id="depth-display">Current Depth: <span id="depth">0</span> meters</div>
+        </header>
+
+        <main id="game-box">
+            <div id="timer-bar"><div id="timer-fill"></div></div>
+            <div id="prompt-container">
+                <p id="prompt-text">Loading game...</p>
+            </div>
+            <div class="input-area">
+                <input type="text" id="answer-input" placeholder="Type a rare answer..." autocomplete="off">
+                <button id="submit-btn">Submit</button>
+            </div>
+            <div id="feedback" class="hidden"></div>
+        </main>
+
+        <section id="results-screen" class="hidden">
+            <h2>Dive Completed!</h2>
+            <p>Final Depth: <span id="final-depth">0</span>m</p>
+            <button id="restart-btn">Dive Again</button>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
